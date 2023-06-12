@@ -2,7 +2,6 @@ local MySQL = {}
 local Queries = {}
 
 -- Modified Version of MySQL - JamesUK
-
 function MySQL.createCommand(queryname, query)
     if not Queries[queryname] then 
         Queries[queryname] = query
