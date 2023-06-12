@@ -23,9 +23,6 @@ function MySQL.execute(queryname, variables)
     end 
 end
 
-
-
-
 function MySQL.asyncQuery(queryname, variables)
     if Queries[queryname] then 
         if variables then 
@@ -37,8 +34,6 @@ function MySQL.asyncQuery(queryname, variables)
         cb({{},nil})
     end 
 end
-
-
 
 function MySQL.query(queryname, variables, cb)
     if Queries[queryname] then 
